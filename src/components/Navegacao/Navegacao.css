@@ -5,19 +5,20 @@
     position: fixed; /* Fixa a navbar no topo da página */
     top: 0; /* Alinha ao topo da página */
     left: 0; /* Alinha à esquerda */
-    height: 90px; /* Define a altura da navbar */
-    background-color: #e0e0e0; /* Define a cor de fundo */
+    height: 70px; /* Define a altura da navbar */
+    background-color: #f4f4f4; /* Define a cor de fundo */
     display: flex; /* Usa flexbox para alinhar os itens */
     align-items: center; /* Alinha os itens verticalmente ao centro */
     justify-content: space-between; /* Espaça os itens igualmente */
     padding: 0 20px; /* Define o padding horizontal */
     transition: height 0.3s, background 0.3s; /* Define transições suaves para altura e fundo */
     z-index: 1000; /* Garante que a navbar fique acima do conteúdo */
+    box-shadow: #000000, op , 2px, 2px, 2px;
   }
   
   .navbar.scrolled {
     height: 50px; /* Diminui a altura da navbar quando rolado */
-    background: #222; /* Altera a cor de fundo quando rolado */
+    background: #f4f4f4; /* Altera a cor de fundo quando rolado */
   }
   
   .container {
@@ -28,14 +29,14 @@
   }
   
   .logo img {
-    padding-top: 20px;
+    padding-top: 25px;
     width: 110px; /* Define a largura da imagem do logotipo */
     height: 50px; /* Define a altura da imagem do logotipo */
     transition: width 0.3s, height 0.3s; /* Define transições suaves para largura e altura */
   }
   
   .navbar.scrolled .logo img {
-    width: 40px; /* Diminui a largura do logotipo quando rolado */
+    width: 100px; /* Diminui a largura do logotipo quando rolado */
     height: 40px; /* Diminui a altura do logotipo quando rolado */
   }
   

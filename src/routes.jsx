@@ -1,5 +1,5 @@
 import { BrowserRouter as Roteador, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/Home";
+import Home from "./pages/Home/Home";
 import Espaco from "./Pages/Espaco/Espaco";
 import Psicopedagogia from "./Pages/Psicopedagogia/Psicopedagogia";
 import Psicanalise from "./Pages/Psicanalise/Psicanalise";

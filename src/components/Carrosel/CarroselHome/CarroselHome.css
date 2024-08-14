@@ -1,0 +1,45 @@
+.carousel-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .slide img {
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel .legend {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.carousel .control-prev.control-arrow {
+    left: 15px;
+}
+
+.carousel .control-next.control-arrow {
+    right: 15px;
+}
+
+.carousel .control-dots .dot {
+    background: #007bff;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
