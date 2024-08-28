@@ -1,136 +1,130 @@
 /* src/components/Navegacao.css */
 
 .navbar {
-    width: 100%; /* Define a largura da navbar para 100% */
-    position: fixed; /* Fixa a navbar no topo da página */
-    top: 0; /* Alinha ao topo da página */
-    left: 0; /* Alinha à esquerda */
-    height: 70px; /* Define a altura da navbar */
-    background-color: #f4f4f4; /* Define a cor de fundo */
-    display: flex; /* Usa flexbox para alinhar os itens */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-between; /* Espaça os itens igualmente */
-    padding: 0 20px; /* Define o padding horizontal */
-    transition: height 0.3s, background 0.3s; /* Define transições suaves para altura e fundo */
-    z-index: 1000; /* Garante que a navbar fique acima do conteúdo */
-    box-shadow: #000000, op , 2px, 2px, 2px;
-  }
-  
-  .navbar.scrolled {
-    height: 50px; /* Diminui a altura da navbar quando rolado */
-    background: #f4f4f4; /* Altera a cor de fundo quando rolado */
-  }
-  
-  .container {
-    display: flex; /* Usa flexbox para alinhar os itens */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-between; /* Espaça os itens igualmente */
-    width: 100%; /* Define a largura para 100% */
-  }
-  
-  .logo img {
-    padding-top: 25px;
-    width: 110px; /* Define a largura da imagem do logotipo */
-    height: 50px; /* Define a altura da imagem do logotipo */
-    transition: width 0.3s, height 0.3s; /* Define transições suaves para largura e altura */
-  }
-  
-  .navbar.scrolled .logo img {
-    width: 100px; /* Diminui a largura do logotipo quando rolado */
-    height: 40px; /* Diminui a altura do logotipo quando rolado */
-  }
-  
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  height: 70px; 
+  background-color: #f4f4f4; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 20px; 
+  transition: height 0.3s, background 0.3s; 
+  z-index: 1000; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar.scrolled {
+  height: 50px; 
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%;
+}
+
+.logo img {
+  padding-top: 25px;
+  width: 110px;
+  height: 50px; 
+  transition: width 0.3s, height 0.3s;
+}
+
+.navbar.scrolled .logo img {
+  width: 100px; 
+  height: 40px;
+}
+
+.hamburger {
+  padding-right: 40px;
+  display: none; 
+  flex-direction: column; 
+  cursor: pointer; 
+  z-index: 1100;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); 
+  background-color: #000000; 
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0; 
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px); 
+  background-color: #000000; 
+}
+
+.bar {
+  width: 25px; 
+  height: 3px; 
+  background-color: #222; 
+  margin: 4px 0; 
+  transition: all 0.3s;
+}
+
+.bar:hover {
+  background: #50a616;
+}
+
+/* Estilos básicos para o nav-links */
+.nav-links {
+  display: flex; 
+  flex-direction: row; /* Exibe os links em linha nas telas grandes */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.nav-links li {
+  display: inline-block; 
+  margin-left: 15px;
+}
+
+.nav-links li a {
+  font-size: 15px;
+  color: #6be003; 
+  text-decoration: none;
+  transition: color 0.3s;
+  padding-right: 30px;
+}
+
+.nav-links li a:hover {
+  color: #50a616; 
+}
+
+/* Estilos específicos para telas pequenas */
+@media (max-width: 768px) {
   .hamburger {
-    padding-right: 40px;
-    display: none; /* Esconde o botão de hambúrguer por padrão */
-    flex-direction: column; /* Alinha os itens verticalmente */
-    cursor: pointer; /* Altera o cursor para indicar clicável */
-    z-index: 1100; /* Garante que o botão de hambúrguer fique acima do conteúdo */
-  }
-  
-  .hamburger.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px); /* Roda a primeira barra em 45 graus */
-    background-color: #000000; /* Altera a cor da barra */
-  }
-  
-  .hamburger.open .bar:nth-child(2) {
-    opacity: 0; /* Esconde a segunda barra */
-  }
-  
-  .hamburger.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px); /* Roda a terceira barra em -45 graus */
-    background-color: #000000; /* Altera a cor da barra */
-  }
-  
-  .bar {
-    width: 25px; /* Define a largura das barras */
-    height: 3px; /* Define a altura das barras */
-    background-color: #222; /* Define a cor das barras */
-    margin: 4px 0; /* Define a margem vertical entre as barras */
-    transition: all 0.3s; /* Define transições suaves para todas as propriedades */
+    display: flex; 
   }
 
-  .bar :hover {
-    background: #50a616;
-  }
-  
   .nav-links {
-    font-size: 20px;
-    list-style: none;
-    display: flex;
+    display: none; 
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    padding-right: 100px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #d3d3d3;
+    min-height: 200px;
+    padding-top: 25px;
   }
-  
-  .nav-links li {
-    display: inline-block; /* Define os itens como blocos em linha */
-  }
-  
-  .nav-links li a {
-    color: #6be003; /* Define a cor dos links */
-    text-decoration: none; /* Remove a sublinhado dos links */
-    transition: color 0.3s; /* Define transições suaves para a cor */
-  }
-  
-  .nav-links li a:hover {
-    color: #50a616; /* Altera a cor dos links ao passar o mouse */
-  }
-  
+
   .nav-links.open {
-    display: flex; /* Exibe os links em tela pequena */
-    flex-direction: column; /* Alinha os itens verticalmente */
-    position: absolute; /* Posiciona os links de forma absoluta */
-    top: 70px; /* Define a posição superior */
-    left: 0; /* Alinha à esquerda */
-    background-color: #d3d3d3; /* Define a cor de fundo */
-    width: 100%; /* Define a largura para 100% */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px 0; /* Define o padding vertical */
-    z-index: 1000; /* Garante que os links fiquem acima do conteúdo */
-    gap: 20px; /* Define o espaço entre os itens */
-    transform: translateY(20px);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  } 
-  
-  @media (max-width: 768px) {
-    .hamburger {
-      display: flex; /* Exibe o botão de hambúrguer em tela pequena */
-    }
-    
-    .nav-links {
-      display: none; /* Esconde os links em tela pequena */
-      flex-direction: column; /* Alinha os itens verticalmente */
-      width: 100%; /* Define a largura para 100% */
-    }
-  
-    .nav-links.open {
-      display: flex; /* Exibe os links quando o botão de hambúrguer é clicado */
-      flex-direction: column; /* Alinha os itens verticalmente */
-      gap: 20px; /* Define o espaço entre os itens */
-      top: 70px; /* Ajusta a posição para cobrir completamente abaixo da navbar */
-    }
+    display: flex;
   }
-  
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
