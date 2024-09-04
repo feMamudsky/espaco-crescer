@@ -1,0 +1,29 @@
+/* Define os estilos para a classe maeRodape, que é o contêiner principal do rodapé.
+Define a cor de fundo como um tom claro de cinza. */
+.maeRodape {
+    background-color: rgb(234, 234, 234);
+    margin-top: 20px;
+    padding-top: 15px;
+    /* Ajusta a sombra para que apareça em cima da div */
+    box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.2); /* Mudança do deslocamento vertical para cima */
+    height: 150px;
+}
+
+
+/* Define os estilos para os textos dos links dentro do rodapé, 
+   aplicando uma cor de texto em um tom claro de cinza para os elementos com a classe FooterText. */
+.FooterText {
+    color: rgb(234, 234, 234);
+}
+
+/* Especifica a cor preta para os links dentro do contêiner maeRodape,
+   para garantir que os links apareçam em preto. */
+.maeRodape a {
+    color: black;
+}
+  
+/* Altera a cor do texto para preto nos elementos dentro de maeRodape
+   que possuem a classe dark:text-gray-400, garantindo contraste em modo escuro. */
+.maeRodape .dark\:text-gray-400 {
+    color: black;
+}

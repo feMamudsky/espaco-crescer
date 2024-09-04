@@ -1,0 +1,167 @@
+/* Estilo principal do contêiner do componente EspacoText */
+.maeEspacoText {
+    display: flex; /* Utiliza o Flexbox para organizar o layout */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    min-height: 100vh; /* Garante que a altura mínima da página seja a altura total da tela */
+    background-color: #f0f0f0; /* Cor de fundo clara */
+    padding: 100px 20px 20px; /* Espaçamento no topo e nas laterais, pequeno espaço na parte inferior */
+    width: 98.8vw; /* Largura total da página */
+    min-width: 98.8vw; /* Largura mínima da página */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+
+/* Contêiner para o texto principal */
+.container-EspacoText {
+    background-color: white; /* Fundo branco para o contêiner de texto */
+    padding: 40px; /* Espaçamento interno ao redor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do contêiner */
+    max-width: 800px; /* Largura máxima do contêiner */
+    width: 100%; /* Largura total disponível */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+
+/* Estilo do cabeçalho contendo o título e subtítulo */
+.header-EspacoText {
+    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+
+/* Estilo do título principal */
+.title-EspacoText {
+    font-family: 'Arial', sans-serif; /* Fonte Arial para o título principal */
+    font-size: 2em; /* Tamanho da fonte do título principal */
+    font-weight: bold; /* Fonte em negrito */
+    color: #16e716; /* Cor escura para o texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Estilo do subtítulo */
+.subtitle-EspacoText {
+    font-family: 'Arial', sans-serif; /* Fonte Arial para o subtítulo */
+    font-size: 1.5em; /* Tamanho da fonte do subtítulo */
+    font-weight: bold; /* Fonte em negrito */
+    color: #7ce419; /* Cor verde para o subtítulo */
+    margin-top: 10px; /* Espaço acima do subtítulo */
+}
+
+/* Estilo dos parágrafos */
+.paragraph-EspacoText {
+    font-family: 'Verdana', sans-serif; /* Fonte Verdana para os parágrafos */
+    font-size: 1.1em; /* Tamanho da fonte dos parágrafos */
+    color: #555; /* Cor do texto dos parágrafos */
+    margin-bottom: 15px; /* Espaço abaixo de cada parágrafo */
+    text-align: justify; /* Justifica o texto dos parágrafos */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    max-width: 800px; /* Largura máxima do texto */
+    width: 100%; /* Largura total disponível */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+
+/* Estilo específico para parágrafos */
+.paragraph-EspacoText:nth-of-type(2) {
+    font-weight: bold; /* Negrito para o segundo parágrafo */
+    color: #333; /* Cor verde para o segundo parágrafo */
+}
+
+.paragraph-EspacoText:nth-of-type(3) {
+    font-style: italic; /* Itálico para o terceiro parágrafo */
+}
+
+.paragraph-EspacoText:nth-of-type(4) {
+    color: #333; /* Cor escura para o quarto parágrafo */
+    font-size: 1em; /* Tamanho de fonte padrão para o quarto parágrafo */
+}
+
+.header-EspacoText {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do contêiner de imagem 1 */
+.image-container1 {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.image-container1 img {
+    max-width: 100%;
+    height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    border-radius: 8px;
+}
+
+/* Estilo do contêiner de imagem 2 */
+.image-container2 {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.image-container2 img {
+    max-width: 100%;
+    height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    border-radius: 8px;
+}
+
+/* Estilo do contêiner de imagem 3 */
+.image-container3 {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.image-container3 img {
+    max-width: 100%;
+    height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    border-radius: 8px;
+}
+
+/* Estilo do contêiner de imagem 4 */
+.image-container4 {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.image-container4 img {
+    max-width: 100%;
+    height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .maeEspacoText {
+        padding: 50px 10px 10px; /* Ajusta o padding em telas pequenas */
+        padding-top: 80px;
+    }
+
+    .container-EspacoText {
+        padding: 20px; /* Menos padding em telas pequenas */
+    }
+
+    .title-EspacoText {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título principal em telas pequenas */
+    }
+
+    .subtitle-EspacoText {
+        font-size: 1.3em; /* Reduz o tamanho da fonte do subtítulo em telas pequenas */
+    }
+
+    .paragraph-EspacoText {
+        font-size: 0.7em; /* Ajusta o tamanho da fonte dos parágrafos em telas pequenas */
+    }
+
+    .image-container1,
+    .image-container2,
+    .image-container3,
+    .image-container4 {
+        text-align: center; /* Centraliza o texto para telas pequenas */
+    }
+
+    .image-container1 img,
+    .image-container2 img,
+    .image-container3 img,
+    .image-container4 img {
+        height: auto; /* Ajusta a altura da imagem para manter a proporção em telas pequenas */
+    }
+}

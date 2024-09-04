@@ -1,90 +1,90 @@
 /* Estilo principal da página */
 .maeHome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-    padding-top: 5px;
-  }
-  
+  display: flex; /* Utiliza o Flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  min-height: 100vh; /* Garante que a altura mínima da página seja a altura total da tela */
+  background-color: #f0f0f0; /* Cor de fundo clara */
+  padding-top: 5px; /* Adiciona um pequeno espaço no topo */
+}
+
+/* Contêiner para o texto principal */
+.container-HomeText {
+  background-color: white; /* Fundo branco para o contêiner de texto */
+  padding: 40px; /* Espaçamento interno ao redor do texto */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do contêiner */
+  max-width: 800px; /* Largura máxima do contêiner */
+  width: 100%; /* Largura total disponível */
+}
+
+/* Estilo do título */
+.container-h1-HomeText {
+  margin-bottom: 20px; /* Espaço abaixo do contêiner de títulos */
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+.h1-HomeText1,
+.h1-HomeText2 {
+  font-family: 'Arial', sans-serif; /* Fonte Arial para os títulos */
+  font-size: 2em; /* Tamanho da fonte dos títulos */
+  font-weight: bold; /* Títulos em negrito */
+  color: #333; /* Cor do texto dos títulos */
+  margin: 0; /* Remove as margens padrão */
+}
+
+.h1-HomeText2 {
+  margin-top: 10px; /* Espaço acima do segundo título */
+  color: #7ce419; /* Cor verde para o segundo título */
+}
+
+/* Estilo dos parágrafos */
+.container-p-HomeText {
+  margin-top: 20px; /* Espaço acima dos parágrafos */
+  line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+}
+
+.p-HomeText1,
+.p-HomeText2,
+.p-HomeText3,
+.p-HomeText4 {
+  font-family: 'Verdana', sans-serif; /* Fonte Verdana para os parágrafos */
+  font-size: 1.1em; /* Tamanho da fonte dos parágrafos */
+  color: #555; /* Cor do texto dos parágrafos */
+  margin-bottom: 15px; /* Espaço abaixo de cada parágrafo */
+  text-align: justify; /* Justifica o texto dos parágrafos */
+}
+
+/* Estilo específico para parágrafos */
+.p-HomeText2 {
+  font-weight: bold; /* Negrito para o segundo parágrafo */
+  color: #7ce419; /* Cor verde para o segundo parágrafo */
+}
+
+.p-HomeText3 {
+  font-style: italic; /* Itálico para o terceiro parágrafo */
+}
+
+.p-HomeText4 {
+  color: #333; /* Cor escura para o quarto parágrafo */
+  font-size: 1em; /* Tamanho de fonte padrão para o quarto parágrafo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .container-HomeText {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 100%;
+      padding: 20px; /* Menos padding em telas pequenas */
   }
-  
-  /* Estilo do título */
-  .container-h1-HomeText {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
+
   .h1-HomeText1,
   .h1-HomeText2 {
-    font-family: 'Arial', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
+      font-size: 1.5em; /* Reduz o tamanho da fonte dos títulos em telas pequenas */
   }
-  
-  .h1-HomeText2 {
-    margin-top: 10px;
-    color: #7ce419; /* Cor diferente para o segundo título */
-  }
-  
-  /* Estilo dos parágrafos */
-  .container-p-HomeText {
-    margin-top: 20px;
-    line-height: 1.6;
-  }
-  
+
   .p-HomeText1,
   .p-HomeText2,
   .p-HomeText3,
   .p-HomeText4 {
-    font-family: 'Verdana', sans-serif;
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 15px;
-    text-align: justify;
+      font-size: 1em; /* Ajusta o tamanho da fonte dos parágrafos em telas pequenas */
   }
-  
-  /* Estilo específico para parágrafos */
-  .p-HomeText2 {
-    font-weight: bold;
-    color: #7ce419;
-  }
-  
-  .p-HomeText3 {
-    font-style: italic;
-  }
-  
-  .p-HomeText4 {
-    color: #333;
-    font-size: 1em;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .container-HomeText {
-      padding: 20px;
-    }
-  
-    .h1-HomeText1,
-    .h1-HomeText2 {
-      font-size: 1.5em;
-    }
-  
-    .p-HomeText1,
-    .p-HomeText2,
-    .p-HomeText3,
-    .p-HomeText4 {
-      font-size: 1em;
-    }
-  }
-  
+}

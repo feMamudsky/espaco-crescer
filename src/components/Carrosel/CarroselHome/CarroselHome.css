@@ -1,45 +1,75 @@
+/* Container principal para o carrossel */
 .carousel-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 800px; /* Define a largura máxima do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+    padding: 20px; /* Adiciona preenchimento interno ao redor do carrossel */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do carrossel */
 }
 
+/* Estilo das imagens dentro do carrossel */
 .carousel .slide img {
-    border-radius: 10px;
-    height: 400px;
-    object-fit: cover;
+    border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+    height: 400px; /* Define a altura das imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o container mantendo a proporção */
 }
 
+/* Estilo da legenda do carrossel */
 .carousel .legend {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1.2em;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Define o fundo da legenda com uma cor preta semi-transparente */
+    border-radius: 5px; /* Adiciona bordas arredondadas à legenda */
+    padding: 10px; /* Adiciona preenchimento interno à legenda */
+    font-size: 1.2em; /* Define o tamanho da fonte na legenda */
+    color: #fff; /* Define a cor do texto como branco */
 }
 
+/* Estilo das setas de controle do carrossel */
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2); /* Define o fundo das setas como preto semi-transparente */
+    border-radius: 50%; /* Faz as setas serem circulares */
 }
 
+/* Posição da seta de controle anterior */
 .carousel .control-prev.control-arrow {
-    left: 15px;
+    left: 15px; /* Define a distância da seta da borda esquerda */
 }
 
+/* Posição da seta de controle seguinte */
 .carousel .control-next.control-arrow {
-    right: 15px;
+    right: 15px; /* Define a distância da seta da borda direita */
 }
 
+/* Estilo dos pontos de controle do carrossel */
 .carousel .control-dots .dot {
-    background: #007bff;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    border-radius: 50%;
+    background: #007bff; /* Define a cor de fundo dos pontos como azul */
+    width: 10px; /* Define a largura dos pontos */
+    height: 10px; /* Define a altura dos pontos */
+    margin: 0 5px; /* Define o espaçamento horizontal entre os pontos */
+    border-radius: 50%; /* Faz os pontos serem circulares */
+}
+
+/* Estilo das setas de controle do carrossel */
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo das setas */
+    border-radius: 50%; /* Forma circular */
+    width: 50px; /* Largura aumentada */
+    height: 50px; /* Altura aumentada */
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+    font-size: 24px; /* Tamanho do ícone dentro da seta */
+}
+
+/* Aumenta o tamanho da seta de controle anterior */
+.carousel .control-prev.control-arrow {
+    left: 15px; /* Distância da borda esquerda */
+}
+
+/* Aumenta o tamanho da seta de controle seguinte */
+.carousel .control-next.control-arrow {
+    right: 15px; /* Distância da borda direita */
 }
