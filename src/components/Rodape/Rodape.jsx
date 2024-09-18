@@ -24,9 +24,9 @@ function Rodape() {
         {/* O componente Footer.LinkGroup agrupa uma série de links relacionados, como política de privacidade, 
         informações de licenciamento e contato, que são estilizados com a classe FooterText. */}
         <Footer.LinkGroup>
-          <Footer.Link className="FooterText" href="#">Sobre</Footer.Link>
+          <Footer.Link className="FooterText" href="/Espaco">Sobre</Footer.Link>
           <Footer.Link className="FooterText" href="/Eventos">Eventos</Footer.Link>
-          <Footer.Link className="FooterText" href="#">Atendimentos</Footer.Link>
+          <Footer.Link className="FooterText" href="/Espaco">Atendimentos</Footer.Link>
           <Footer.Link className="FooterText" href="/Contato">Contato</Footer.Link>
         </Footer.LinkGroup>
 

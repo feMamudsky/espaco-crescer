@@ -4,7 +4,7 @@ import Espaco from "./Pages/Espaco/Espaco";
 import Psicopedagogia from "./Pages/Psicopedagogia/Psicopedagogia";
 import Psicanalise from "./Pages/Psicanalise/Psicanalise";
 import Contato from "./Pages/Contato/Contato";
-import Eventos from "./Pages/Eventos/Eventos";
+import Eventos from "./pages/Eventos/Eventos";
 
 function AppRoutes() {
     return (
@@ -20,7 +20,7 @@ function AppRoutes() {
                     <Route path='/Psicopedagogia' Component={Psicopedagogia} />
                     <Route path='/Psicanalise' Component={Psicanalise} />
                     <Route path='Contato' Component={Contato} />
-                    <Route path='./Eventos' Component={Eventos} />
+                    <Route path='/Eventos' Component={Eventos} />
 
                 </Routes>
             </Roteador>
