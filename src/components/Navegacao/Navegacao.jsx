@@ -72,7 +72,6 @@ function Navegacao() {
             <li><a href="./Espaco ">O Espaço</a></li>
             <li><a href="./Psicopedagogia">Psicopedagogia</a></li>
             <li><a href="./Psicanalise">Psicanalise</a></li>
-            <li><a href="./Psicologia">Psicologia</a></li>
             <li><a href="./Contato">Contato</a></li>
             <li><a href="./Eventos">Eventos</a></li>
           </ul>
@@ -83,7 +82,6 @@ function Navegacao() {
             <li><a href="./Espaco ">O Espaço</a></li>
             <li><a href="./Psicopedagogia">Psicopedagogia</a></li>
             <li><a href="./Psicanalise">Psicanalise</a></li>
-            <li><a href="./Psicologia">Psicologia</a></li>
             <li><a href="./Contato">Contato</a></li>
             <li><a href="./Eventos">Eventos</a></li>
           </animated.ul>

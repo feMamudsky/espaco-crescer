@@ -3,7 +3,6 @@ import Home from "./pages/Home/Home";
 import Espaco from "./Pages/Espaco/Espaco";
 import Psicopedagogia from "./Pages/Psicopedagogia/Psicopedagogia";
 import Psicanalise from "./Pages/Psicanalise/Psicanalise";
-import Psicologia from "./Pages/Psicologia/Psicologia";
 import Contato from "./Pages/Contato/Contato";
 import Eventos from "./Pages/Eventos/Eventos";
 
@@ -20,7 +19,6 @@ function AppRoutes() {
                     <Route path='/Espaco' Component={Espaco} />
                     <Route path='/Psicopedagogia' Component={Psicopedagogia} />
                     <Route path='/Psicanalise' Component={Psicanalise} />
-                    <Route path='/Psicologia' Component={Psicologia} />
                     <Route path='Contato' Component={Contato} />
                     <Route path='./Eventos' Component={Eventos} />
 

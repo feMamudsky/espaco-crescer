@@ -1,0 +1,155 @@
+/* Estilo principal da página */
+.mae-contato-text {
+    display: flex; /* Utiliza o Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    min-height: 100vh; /* Garante que a altura mínima da página seja a altura total da tela */
+    min-width: 100vw; /* Garante que o contêiner ocupe toda a largura da tela */
+    background-color: #f0f0f0; /* Cor de fundo clara */
+    padding-top: 100px; /* Adiciona um pequeno espaço no topo */
+  }
+  
+  /* Contêiner para o texto principal */
+  .container-geral-contato {
+    background-color: white; /* Fundo branco para o contêiner de texto */
+    padding: 40px; /* Espaçamento interno ao redor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do contêiner */
+    max-width: 800px; /* Largura máxima do contêiner */
+  }
+  
+  /* Estilo do título */
+  .contato-intro-container {
+    margin-bottom: 20px; /* Espaço abaixo do contêiner de introdução */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+  }
+
+  .text-corpo-contato {
+    margin-top: 20px; /* Espaço acima do contêiner de corpo */
+  }
+  
+  .contato-h1-corpo {
+    padding-top: 10vh;
+    font-family: 'Arial', sans-serif; /* Fonte Arial para o título do corpo */
+    font-size: 1.8em; /* Tamanho da fonte do título do corpo */
+    font-weight: bold; /* Título em negrito */
+    color: #00e726; /* Cor do texto do título do corpo */
+    margin-bottom: 10px; /* Espaço abaixo do título do corpo */
+    text-align: center; /* Centraliza o título */
+  }
+
+  .foto-mateus-sorridente {
+    width: 70%; /* Usa porcentagem da largura do contêiner pai */
+    max-width: 400px; /* Define uma largura máxima para telas grandes */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem se o contêiner pai tiver uma largura fixa */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+    border: 2px solid #ddd; /* Adiciona uma borda fina e clara ao redor da imagem */
+}
+
+  
+  .contato-p1-corpo,
+  .contato-p2-corpo {
+    font-family: 'Verdana', sans-serif; /* Fonte Verdana para os parágrafos do corpo */
+    font-size: 1.1em; /* Tamanho da fonte dos parágrafos do corpo */
+    color: #555; /* Cor do texto dos parágrafos do corpo */
+    margin-bottom: 15px; /* Espaço abaixo de cada parágrafo */
+    text-align: justify; /* Justifica o texto dos parágrafos */
+  }
+
+  .redes-sociais {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #555;
+    margin-top: 20px;
+  }
+
+  .redes-sociais-h1 {
+    color: black;
+    font-size: 1.6rem;
+  }
+
+  .botoes-redes-sociais {
+    display: flex; /* Alinha os botões em uma linha */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 15px; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem para uma nova linha em telas pequenas */
+}
+
+.botao-rede-social {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white; /* Cor do texto e ícones */
+    text-decoration: none; /* Remove sublinhado */
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para hover */
+    margin-bottom: 20px;
+  }
+
+/* Estilos Específicos para Cada Rede Social */
+.botao-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c);
+}
+
+.botao-facebook {
+    background-color: #3b5998;
+}
+
+.botao-whatsapp {
+    background-color: #25D366;
+}
+
+/* Hover Efeitos Específicos */
+.botao-instagram:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.botao-facebook:hover {
+    background-color: #2d4373; /* Tom mais escuro de azul */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.botao-whatsapp:hover {
+    background-color: #1da851; /* Tom mais escuro de verde */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+/* Estilo dos Ícones dentro dos Botões */
+.botao-rede-social svg {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    font-size: 1.2em; /* Tamanho dos ícones */
+}
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+
+    .foto-maria-sorridente {
+        width: 90%; /* Aumenta a largura em telas menores */
+        max-width: 300px; /* Ajusta a largura máxima em telas menores */
+    }
+
+    .container-geral-contato {
+        padding: 20px; /* Menos padding em telas pequenas */
+    }
+  
+    .contato-h1-intro,
+    .contato-h1-corpo {
+        font-size: 1.5em; /* Reduz o tamanho da fonte dos títulos em telas pequenas */
+    }
+  
+    .contato-p-intro,
+    .contato-p1-corpo,
+    .contato-p2-corpo {
+        font-size: 1em; /* Ajusta o tamanho da fonte dos parágrafos em telas pequenas */
+    }
+  }
+  
