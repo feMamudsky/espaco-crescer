@@ -18,7 +18,7 @@ function Rodape() {
         com um link (href="#") e o nome "femamudsky" para o proprietário, além do ano 2024. */}
         <Footer.Copyright 
           href="#" 
-          by={<a href="https://github.com/feMamudsky" target="_blank" rel="noopener noreferrer">feMamudsky</a>} 
+          by={<a href="https://www.linkedin.com/in/felipe-mamud-353146312/" target="_blank" rel="noopener noreferrer">feMamudsky</a>} 
           year={2024} 
         />
         {/* O componente Footer.LinkGroup agrupa uma série de links relacionados, como política de privacidade, 
